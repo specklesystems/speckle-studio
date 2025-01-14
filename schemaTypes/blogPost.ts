@@ -12,7 +12,7 @@ export default defineType({
       validation: (Rule) => Rule.required()
     },
     {
-      name: 'Webflow URL',
+      name: 'webflowURL',
       type: 'url',
       title: 'Webflow URL',
       description: 'The link to the webflow post',
