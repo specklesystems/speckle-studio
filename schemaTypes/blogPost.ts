@@ -12,6 +12,13 @@ export default defineType({
       validation: (Rule) => Rule.required()
     },
     {
+      name: 'Webflow URL',
+      type: 'url',
+      title: 'Webflow URL',
+      description: 'The link to the webflow post',
+      validation: (Rule) => Rule.required()
+    },
+    {
       name: 'summary',
       type: 'text',
       title: 'Summary'
@@ -37,6 +44,7 @@ export default defineType({
       name: 'mainImage',
       type: 'image',
       title: 'Main Image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true
       }
